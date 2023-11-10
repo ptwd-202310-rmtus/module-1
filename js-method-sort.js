@@ -92,4 +92,8 @@ const sortedByLength = [...randomWords].sort((word1, word2) => {
   }
 });
 
+// If the result is negative, it means that "word1" should come before "word2" in the sorted array (shorter strings come before longer strings).
+// If the result is positive, it means that "word2" should come before "word1" (longer strings come before shorter strings).
+// If the result is zero, it means that "word1" and "word2" have the same length and their order remains unchanged.
+
 console.log(sortedByLength); // [ 'A', 'a', 'how', 'Hello', 'great', 'First' ]
